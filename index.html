@@ -11,23 +11,26 @@
 
 <body>
     <section class="topo">
-        <a href="index.html"><img src="./imagens/Logo large.png" alt=""></a>
-        <ul>
-            <a href="index.html">
-                <li>Página inicial</li>
-            </a>
-            <a href="#produtos">
-                <li>Produtos</li>
-            </a>
-            <a href="#beneficios">
-                <li>Benefícios</li>
-            </a>
-            <a href="#sobre-nos">
-                <li>Sobre nós</li>
-            </a>
+        <a href="index.html"><img src="images/favicon.svg" alt="" /></a>
+        <nav class="menu-lateral">
+          <ion-icon
+                class="botao-menu-close"
+                name="close-outline"
+                onclick="toggleMenu()"></ion-icon>
+          <ul>
+              <a href="index.html"><li>Página inicial</li></a>
+            <a href="#produtos"><li>Produtos</li></a>
+            <a href="#beneficios"><li>Benefícios</li></a>
+            <a href="#sobre-nos"><li>Sobre nós</li></a>
             <a class="botao-primario" href="">Comprar agora!</a>
-        </ul>
-    </section>
+          </ul>
+        </nav>
+        <ion-icon
+          class="botao-menu"
+          name="menu-outline"
+          onclick="toggleMenu()"
+        ></ion-icon>
+      </section>
     <section class="header">
         <section class="esquerda">
         <h1>Cuide-se da melhor forma possível, cuide-se com Océane!</h1>
@@ -38,6 +41,111 @@
             <img class="imagem_principal"src="imagens/imagem_principal.jfif" alt="">
         </section>
     </section>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+    <script src="script.js"></script>
 </body>
+<section id="produtos">
+    <h2>Nossos produtos</h2>
+    <h3>Descubra a excelência incomparável em cada detalhe.</h3>
+    <section class="produtos">
+        <section class="produto">
+            <img src="imagens/produto_1.jfif" alt="">
+            <a class="botao-primario" href="">Comprar</a>
+        </section>
+        <section class="produto">
+            <img src="imagens/produto_2.jfif" alt="">
+            <a class="botao-primario" href="">Comprar</a>
+        </section>
+        <section class="produto">
+            <img src="imagens/produto_3.png" alt="">
+            <a class="botao-primario" href="">Comprar</a>
+        </section>
+    </section>
+</section>
+<section id="beneficios">
+    <h2>Benefícios</h2>
+    <section class="beneficios">
+        <section class="beneficio">
+            <section class="beneficio-titulo">
+                <ion-icon name="checkmark-circle"></ion-icon>
+                <h4>Resultados em menos de um mes!</h4>
+        </section>
+        <p>Um produto totalmente vegano e com alta qualidade, feito para você!</p>
+        </section>
+
+        <section class="beneficio">
+            <section class="beneficio-titulo">
+                <ion-icon name="checkmark-circle"></ion-icon>
+                <h4>Pensado em você!</h4>
+        </section>
+        <p>O Kit Antiacne Completo conta com uma rotina completa para o tratamento da acne facial e corporal, todos os produtos são veganos, cruelty free, livre de parabenos e silicones.</p>
+        </section>
+
+        <section class="beneficio">
+            <section class="beneficio-titulo">
+                <ion-icon name="checkmark-circle"></ion-icon>
+                <h4>Pele limpa e sem acne!</h4>
+        </section>
+        <p>A pele oleosa e acneica pede cuidados especiais, pensando nisso a Océane desenvolveu produtos específicos para esse tipo de pele, oferecendo todo o cuidado, hidratação e tratamento necessário.
+            .</p>
+        </section>
+    </section>
+    <a class="botao-primario" href="">Comprar agora!</a>
+</section>
+
+<section id="sobre-nos">
+    <section class="esquerda">
+        <img class ="imagem-final" src="imagens/ocn.png" alt="">
+    </section>
+    <section class="direita">
+        <h2>Sobre nós</h2>
+        <p>Não somos uma marca de beleza. Somos uma nova forma de comprar, consumir e pensar a beleza. Nascemos há quinze anos para trazer uma beleza espontânea, descomplicada, acessível, e claro, smart!
+
+            Smart porque inovação faz parte do nosso DNA. Nosso primeiro produto - os lenços removedores de esmalte - foram inéditos no mercado. De lá para cá, as inovações não pararam. Estamos sempre de olho nas pesquisas e no que existe de mais inovador no universo da beleza. Assim, a cada mês apresentamos uma novidade. Do skincare produzido na Coréia do Sul, passando por acessórios para seu momento de bem-estar e autocuidado, além de maquiagem, nossa intenção é propor produtos para uma rotina prática e leve.
+            
+            Da pesquisa à compra, passando pelas nossas lojas, até o produto e seus rituais...a gente acredita que toda experiência de beleza pode (e deve!) ser mais smart.<br><br>
+            
+        <a class="botao-primario" href="">Comprar agora!</a>
+        </section>
+</section>
+
+<footer>
+    <section class="marca">
+        <img src="imagens/Logo large.png" alt="">
+        <p>Cuide-se com Océane!</p>
+    </section>
+    <section class="informacoes">
+        <h5>Informações</h5>
+        <ul>
+            <li>Contate-nos</li>
+            <li>Sobre nós</li>
+            <li>Blog</li>
+            <li>FAQs</li>
+        </ul>
+    </section>
+    <section class="empresa">
+        <h5>Empresa</h5>
+        <ul>
+            <li>Promoções</li>
+            <li>Carreiras</li>
+            <li>Termos e condições</li>
+            <li>Políticas de privacidade</li>
+        </ul>
+    </section>
+    <section class="contato">
+        <h5>Conecte-se conosco!</h5>
+        <section class="icons">
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+        </section>
+    </section>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
 
 </html>
